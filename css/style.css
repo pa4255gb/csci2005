@@ -1,0 +1,21 @@
+.topbanner{
+text-align: center;
+}
+
+.hello{
+	text-align: center;
+
+max-width: 50%;
+margin: auto;
+}
+
+.sellform {
+max-width: 50%;
+margin: auto;
+
+	
+}
+
+body {
+ background-color: grey;
+}

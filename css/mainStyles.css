@@ -68,3 +68,10 @@ footer {
 	margin-left: 10%;
 	margin-right: 10%;
 }
+.library {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 50%;
+	height: 50%;
+}

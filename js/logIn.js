@@ -6,3 +6,32 @@
 //bypass logIn.html and go to myAccount.html
 //Code to populate myAccount.html with data from submitted user >>> might want to put this in a
 //separate js file.
+
+var authUsers = [
+  {
+    "username": "shelby",
+    "password": "medlock"
+  },
+  {
+    "username": "tom",
+    "password": "mcdonald"
+  },
+  {
+    "username": "keith",
+    "password": "perlman"
+  }
+]
+
+
+function testLogin(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+
+for(i =0; i < authUsers.length; i++) {
+      if(username.toLowerCase() == authUsers[i].username && password.toLowerCase() == authUsers[i].password) {
+       alert(username + " Is logged in!")
+       return
+      }
+   }
+   alert("You have entered an incorrect user name or password")
+}

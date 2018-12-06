@@ -1,0 +1,76 @@
+body {
+	background-image: url("../images/background.png");
+	background-size: 100%;
+	width: 100%;
+}
+
+.bookpagetable,.bookpagetable th,.bookpagetable tr,.bookpagetable td, #cartTable, #cartTable th, #cartTable td, #checkoutTable, #checkoutTable th, #checkoutTable td{
+  border: 2px solid black;
+	border-collapse: collapse;
+  text-align: center;
+}
+.book{
+	margin: 5% 25%;
+}
+.bookpagetable{
+	float: right;
+}
+#newButton, #usedButton{
+	float: right;
+}
+th, td{
+	padding-top: 5px;
+}
+#headnav {
+	width: 100%;
+	background-color: #002856;
+}
+#logInForm{
+	margin: 5% 40%;
+}
+#username, #password{
+	margin: 0.5%;
+}
+h1 {
+	clear: left;
+  text-align: center;
+  background: #002856;
+  color: white;
+	font-size: 32px;
+}
+#headnav ul li {
+  float: left;
+}
+
+#headnav ul{
+	background-color: #002856;
+	list-style-type: none;
+}
+#headnav ul li a{
+	padding: 16px 16px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+	display: block;
+
+}
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #002856;
+  text-align: center;
+  color: white;
+}
+
+.enchancedTableData {
+	font-weight: bold;
+}
+.contentdiv {
+	width: 100%;
+}
+#article {
+	margin-left: 10%;
+	margin-right: 10%;
+}

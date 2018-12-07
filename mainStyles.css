@@ -15,8 +15,28 @@ body {
 .bookpagetable{
 	float: right;
 }
+.library{
+	margin-left: 28%;
+	margin-right: 28%;
+	margin-top: 5%;
+}
+#instructorOptions{
+	margin-left: 45%;
+}
 #newButton, #usedButton{
 	float: right;
+}
+#cartTable{
+	margin-left: 10%;
+}
+#emptyBtn{
+	margin-left: 10%;
+	margin-top: 1%;
+}
+.cart a{
+	margin-left: 30%;
+	background-color: #002856;
+	color: white;
 }
 th, td{
 	padding-top: 5px;
@@ -37,6 +57,7 @@ h1 {
   background: #002856;
   color: white;
 	font-size: 32px;
+	padding-bottom: 2%;
 }
 #headnav ul li {
   float: left;

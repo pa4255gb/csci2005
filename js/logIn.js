@@ -7,6 +7,11 @@
 //Code to populate myAccount.html with data from submitted user >>> might want to put this in a
 //separate js file.
 
+
+window.addEventListener('submit', testLogin);
+
+function testLogin(e){
+e.preventDefault();
 var authUsers = [
   {
     "username": "shelby",
@@ -22,16 +27,17 @@ var authUsers = [
   }
 ]
 
-
-function testLogin(){
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 
 for(i =0; i < authUsers.length; i++) {
       if(username.toLowerCase() == authUsers[i].username && password.toLowerCase() == authUsers[i].password) {
        alert(username + " Is logged in!")
+      window.location.href = "accountReg.html";
        return
       }
    }
    alert("You have entered an incorrect user name or password")
 }
+
+ 

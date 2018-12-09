@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Physics1</title>
+		<link href="css/mainStyles.css" rel="stylesheet"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="headnav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="logIn.html">My Account</a></li>
+					<li><a href="accountReg.html">Account Registration</a></li>
+					<li><a href="cart.html">Cart</a></li>
+				</ul>
+				<h1>College Bookstore</h1>
+			</nav>
+		</header>
+		<!--This page is for textbook product details. If time allows, try to research
+	and implemnet a way to use JavaScript to generate a bookPage based on what link is used
+	to get to it; that way only one bookPage.html would be needed.-->
+		<article class="book">
+			<h2>Physics 1</h2>
+			<figure class="bookImg">
+				<img src="images/textbook_phys.jpg" alt="Physics for Scientists and Engineers" height="15%" width="15%">
+			</figure>
+			<table class="bookpagetable">
+				<thead>
+					<tr>
+						<th colspan="2">Textbook Details</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><strong>Title</strong></td>
+						<td id="bTitle">Physics for Scientists and Engineers</td>
+					</tr>
+					<tr>
+						<td><strong>Price (New)</strong></td>
+						<td id="bNewPrice">$ 161.25</td>
+					</tr>
+					<tr>
+						<td><strong>Price (Used)</strong></td>
+						<td id="bUsedPrice">$ 120.95</td>
+					</tr>
+					<tr>
+						<td><strong>Author</strong></td>
+						<td>Raymond A. Serway, John W. Jewett</td>
+					</tr>
+					<tr>
+						<td><strong>Edition/Copyright</strong></td>
+						<td>9th 16</td>
+					</tr>
+					<tr>
+						<td><strong>Published Date</strong></td>
+						<td>2016</td>
+					</tr>
+					<tr>
+						<td><strong>ISBN</strong></td>
+						<td>9781305714892</td>
+					</tr>
+				</tbody>
+			</table>
+			<input type="button" id="newButton" value="Add New to Cart">
+			<input type="button" id="usedButton" value="Add Used to Cart">
+			<section>
+				<h3>Textbook Description</h3>
+				<p>Achieve success in your physics course by making the most of what PHYSICS FOR SCIENTISTS AND ENGINEERS Ninth Edition Technology Edition has to offer.
+					From a host of in-text features to a range of outstanding technology resources,
+					you'll have everything you need to understand the natural forces and principles of physics.
+					Throughout every chapter, the authors have built in a wide range of examples, exercises,
+					and illustrations that will help you to understand the laws of physics AND succeed in your course!</p>
+			</section>
+		</article>
+		<footer>CSCI 2005 Project; Fall 2018; Baani; By: Shelby Medlock, Tom McDonald, and Keith Perlman</footer>
+		<script src="js/bookPages.js" type="text/javascript"></script>
+	</body>
+</html>

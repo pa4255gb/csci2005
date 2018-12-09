@@ -6,7 +6,7 @@ function testLogin(e){
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
 
-  for(i =0; i < authUsers.length; i++) {
+  for(var i=0; i < authUsers.length; i++) {
         if(username.toLowerCase() == authUsers[i].username && password.toLowerCase() == authUsers[i].password) {
           window.localStorage.setItem("user", username);
           alert(username + " Is logged in!");
@@ -14,5 +14,5 @@ function testLogin(e){
           return
         }
       }
-      alert("You have entered an incorrect user name or password")
+      alert("You have entered an incorrect user name or password");
 }

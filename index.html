@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Bookstore</title>
-	<div class="topbanner">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-<a href="index.html">Home </a> <a href="store.html">Buy</a>  <a href="sell.html">Sell</a>
-</div>
-</head>
-<body>
-	<br>
-	<div class="hello">
-	Hello World. Welcome to our bookstore. We are still in the process of procuring the finest selection of books for your enjoyment. We appreciate your patience as we are under construction. 
-</div>
-<center>
-<img src="images/library.jpg">
-</center>
-</body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>College Bookstore</title>
+		<link href="css/mainStyles.css" rel="stylesheet"/>
+		<script src="js/index.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="headnav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="logIn.html">My Account</a></li>
+					<li><a href="accountReg.html">Account Registration</a></li>
+					<li><a href="cart.html">Cart</a></li>
+				</ul>
+				<h1>College Bookstore</h1>
+			</nav>
+		</header>
+		<form>
+			<select name="instructorOptions" id="instructorOptions">
+				<option value="placeholder" selected>Select instructor name</option>
+				<option value="instructorA.html">Instructor A</option>
+				<option value="instructorB.html">Instructor B</option>
+				<option value="instructorC.html">Instructor C</option>
+			</select>
+			<input type="button" value="Go" id="indexPageBtn"/>
+			<!--Uses JavaScript to send to correct instructor page based on selection
+			and button click. onclick="goToInstructorPage()" -->
+		</form>
+	<img class="library" src="images/library.jpg" alt="library">
+
+		<footer>CSCI 2005 Project; Fall 2018; Baani; By: Shelby Medlock, Tom McDonald, and Keith Perlman</footer>
+	</body>
 </html>

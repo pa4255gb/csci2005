@@ -17,7 +17,8 @@ body {
 	color: white;
 }
 #cartTable tr:nth-child(even), #checkoutTable tr:nth-child(even){
-	background-color: #c6d9ec;}
+	background-color: #c6d9ec;
+}
 .book{
 	margin: 5% 25%;
 }

@@ -5,10 +5,19 @@ body {
 }
 
 .bookpagetable,.bookpagetable th,.bookpagetable tr,.bookpagetable td, #cartTable, #cartTable th, #cartTable td, #checkoutTable, #checkoutTable th, #checkoutTable td{
-  border: 2px solid black;
+  border: 1px solid grey;
 	border-collapse: collapse;
   text-align: center;
 }
+#cartTable th, #cartTable td, #checkoutTable th, #checkoutTable td{
+	padding: 10px;
+}
+#cartTable th, #checkoutTable th{
+	background-color: #005580;
+	color: white;
+}
+#cartTable tr:nth-child(even), #checkoutTable tr:nth-child(even){
+	background-color: #c6d9ec;}
 .book{
 	margin: 5% 25%;
 }

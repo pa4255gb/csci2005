@@ -1,43 +1,22 @@
-//Suggestions for logIn - Shelby
-//Validate username and password >>> data.js
-//Go to myAccount.html if creds match >>> use window.location.assign();
-//Put submitted username into local storage
-//if window.localStorage.getItem("user") != null
-//bypass logIn.html and go to myAccount.html
-//Code to populate myAccount.html with data from submitted user >>> might want to put this in a
-//separate js file.
-
-
 window.addEventListener('submit', testLogin);
 
 function testLogin(e){
-e.preventDefault();
-var authUsers = [
-  {
-    "username": "shelby",
-    "password": "medlock"
-  },
-  {
-    "username": "tom",
-    "password": "mcdonald"
-  },
-  {
-    "username": "keith",
-    "password": "perlman"
-  }
-]
+  e.preventDefault();
 
-var username = document.getElementById("username").value;
-var password = document.getElementById("password").value;
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var token = 1;
 
-for(i =0; i < authUsers.length; i++) {
-      if(username.toLowerCase() == authUsers[i].username && password.toLowerCase() == authUsers[i].password) {
-       alert(username + " Is logged in!")
-      window.location.href = "accountReg.html";
-       return
+  for(var i=0; i < authUsers.length; i++) {
+        if(username.toLowerCase() == authUsers[i].username && password.toLowerCase() == authUsers[i].password) {
+          token = 0;
+          window.localStorage.setItem("user", username);
+          alert(username + " Is logged in!");
+          window.location.assign("myAccount.html");
       }
-   }
-   alert("You have entered an incorrect user name or password")
+    }
+    if(token == 1){
+      alert("You have entered an incorrect user name or password");
+      document.getElementById("logInForm").reset();
+    }
 }
-
- 

@@ -1,4 +1,21 @@
 //Used for testing log in page
-var dummyAccountCreds = [{username: "Shelby", password: "cv8513vq"},
-                        {username: "Keith", password: "pa4255gb"},
-                        {username: "Tom", password: "wq3570is"}];
+var authUsers = [
+  {
+    "username": "shelby",
+    "password": "medlock",
+    "firstName": "Shelby",
+    "lastName": "Medlock"
+  },
+  {
+    "username": "tom",
+    "password": "mcdonald",
+    "firstName": "Tom",
+    "lastName": "McDonald"
+  },
+  {
+    "username": "keith",
+    "password": "perlman",
+    "firstName": "Keith",
+    "lastName": "Perlman"
+  }
+]

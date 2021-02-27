@@ -1,0 +1,47 @@
+body {
+	background-image: url("../images/background.png");
+	background-size: 100%;
+}
+
+table, th, tr, td{
+  border: 2px solid black;
+	border-collapse: collapse;
+  text-align: center;
+}
+th, td{
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  background: #002856;
+  color: white;
+}
+nav ul li {
+  border: 1px solid black;
+  display: inline;
+  background: #002856;
+}
+
+ul{
+	background-color: #002856;
+}
+li a{
+	padding-right: 5px;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #002856;
+  text-align: center;
+  color: white;
+}
+
+.enchancedTableData {
+	font-weight: bold;
+}
